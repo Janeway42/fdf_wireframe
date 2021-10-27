@@ -6,7 +6,7 @@
 /*   By: cpopa <cpopa@student.codam.nl>               +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/03 14:30:24 by cpopa         #+#    #+#                 */
-/*   Updated: 2021/10/17 17:24:37 by cpopa         ########   odam.nl         */
+/*   Updated: 2021/10/27 10:36:11 by cpopa         ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ int	main(int argc, char **argv)
 	t_data	*data;
 
 	if (argc != 2)
-		error_exit("not enough arguments\n");
+		error_exit("wrong number of arguments\n");
 	if (check_column_lenght(argv[1]) == 1)
 		error_exit("map format incorect\ntry again!");
 	data = initialize_data();
